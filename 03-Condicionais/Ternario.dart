@@ -1,11 +1,11 @@
 void main() {
-  if (!true) {
-    print('Verdadeiro');
-  } else {
-    print('Falso');
-  }
+ // if (!true) {
+ //   print('Verdadeiro');
+ // } else {
+ //   print('Falso');
+  
 
-  print('${!true ? 'Verdadeiro' : 'Falso'}');
+  //print('${!true ? 'Verdadeiro' : 'Falso'}');
 
   int idade = 19;
 

@@ -38,5 +38,5 @@ main() {
 
   arrayDinamico.clear();
   
-  print('ArrayDinamico == NULL> ${arrayDinamico  is Null }');
+ // print('ArrayDinamico == NULL> ${arrayDinamico  is Null }');
 }

@@ -52,8 +52,8 @@ void main() {
   print(' '.isEmpty); // false
   print(''.isEmpty); // true
   print(double.parse('12.5')); //'12.5'
-  print("1" is String); // true
-  print(int.parse('12')  is int); //true
+  //print("1" is String); // true
+  //print(int.parse('12')  is int); //true
   print(nome.lastIndexOf('a')); //4
 
   String sopa = 'sopa de letrinhas';

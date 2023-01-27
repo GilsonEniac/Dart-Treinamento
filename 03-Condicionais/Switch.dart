@@ -1,27 +1,27 @@
 
 
 main() {
-  String operacao = '/'; //  +, -, *, /
+  //String operacao = '/'; //  +, -, *, /
 
   /* double numeroA = 9, numeroB = 5;
 
   switch (operacao) {
-    case '+':
-      print('Resultado : ${numeroA + numeroB}');
-      break;
-    case '-':
-      print('Resultado: ${numeroA - numeroB}');
-      break;
-    case '*':
-      print('Resultado: ${numeroA * numeroB}');
-      break;
-    case '/':
-      print('Resultado: ${numeroA / numeroB}');
-      break;
-    default:
-      print('Operação  invalido');
-  } */
-
+/*     ca */se '+':
+/*        */print('Resultado : ${numeroA + numeroB}');
+/*        */break;
+/*     ca */se '-':
+/*        */print('Resultado: ${numeroA - numeroB}');
+/*        */break;
+/*     ca */se '*':
+/*        */print('Resultado: ${numeroA * numeroB}');
+/*        */break;
+/*     ca */se '/':
+/*        */print('Resultado: ${numeroA / numeroB}');
+/*        */break;
+/*     de */fault:
+/*        */print('Operação  invalido');
+/*   } */ */
+/*  */
   int dia = 5;
 
   switch (dia) {

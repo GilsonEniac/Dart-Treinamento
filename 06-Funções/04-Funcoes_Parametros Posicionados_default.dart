@@ -10,7 +10,7 @@
 ///
 
 void exibirDados1(String nome, [int? peso, double? altura]) {
-  if ((peso is Null) && (altura is Null))
+  if ((peso == null) && (altura ==null))
     print('Nome: $nome');
   else
     print('Nome: $nome Peso: $peso Altura: $altura');

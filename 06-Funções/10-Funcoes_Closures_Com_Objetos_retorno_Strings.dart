@@ -18,7 +18,7 @@ main() {
   var listaObjeto = [objeto('Gilson', desc10(100.00))];
   listaObjeto.add(objeto('Cassia', '300.00'));
 
-  void printLista(element) => print(element);
+  //void printLista(element) => print(element);
 
   void meuPrint(element) {
     print(element);

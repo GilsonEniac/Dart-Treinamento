@@ -5,17 +5,17 @@ void main() {
   ///Operador || precisa somente que uma das afirmações seja verdadeira para retorna true
   ///OPeradro ! inverte o valor booleano
   ///
-  var verdadeiro = !false;
+  //var verdadeiro = !false;
   bool falso = !true;
 
   //print('verdadeiro = ${verdadeiro} FAlso = ${falso}');
   //print('Operador ! !true = ${!true} !falso = ${!false}');
 
-  bool teste1 = verdadeiro || verdadeiro;
-  bool teste2 = verdadeiro || falso;
-  bool teste3 = falso || falso;
-  print('Operador% (||) ${teste1} - ${teste2} - ${teste3}');
-  print('Operador (&&)  ${true && true} - ${true && false} = ${false && false}');
+  //bool teste1 = verdadeiro || verdadeiro;
+  //bool teste2 = verdadeiro || falso;
+  //bool teste3 = falso || falso;
+  //print('Operador% (||) ${teste1} - ${teste2} - ${teste3}');
+ // print('Operador (&&)  ${true && true} - ${true && false} = ${false && false}');
 
   bool operacao = (1 <= 2) && (3 > 2);
   print(operacao);
