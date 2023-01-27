@@ -1,7 +1,7 @@
 var novoObjeto = () {
   var id = 0;
   criaObjeto(nome, complemento) {
-     return '${id++} $nome $complemento';
+     return '[${(id++).toString().padLeft(3,'0')}] $nome $complemento';
   }
 
   return criaObjeto;
