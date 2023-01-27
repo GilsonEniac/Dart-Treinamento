@@ -12,15 +12,15 @@ void main() {
 
   a = 3;
   b = ++a; //incrementa antes que  b receba o valor
-  print('a: $a , b: $b');
+  print('1- ' 'a: $a , b: $b');
 
   c = ++a / --b;
-  print('a: $a , b:$b');
-  print(c);
+  print('2-  ''a: $a , b:$b');
+  print('3-  , $c');
 
   d = a ~/ b; //retorna numero inteiro
-  print('a: $a , b:$b');
-  print(d);
+  print('4-  ''a: $a , b:$b');
+  print('5-  $d');
 
   e = 1;
   f = e;
@@ -30,27 +30,8 @@ void main() {
 
   var x, y, z;
   z = 1;
-  x = y ?? z; //x recebe valor de y , a monos que y seja nulo , então x recbe valor de z
+  x = y ?? z; //x recebe valor de y , a menos que y seja nulo , então x recbe valor de z
   print(x);
 
-  var nome = null;
-  print('Nome : ${nome ?? 'Fernando'}\n'); //se o valor for nulo recebe a string 'Ferando'
-
-  var numero = 12;
-  var par = numero % 2 == 0; //mostra o resto da divisãp
-  var impar = numero % 2 != 0;
-  var positivo = numero >= 0;
-  var negativo = numero < 0;
-
-  print('numero:$numero, par:$par, impar: $impar, positivo: $positivo, negativo: $negativo');
-
-  var multiplo = 3;
-
-  print('numero: $numero é multiplo de $multiplo ? ${numero % multiplo == 0}');
-
-  int dividendo = 19, divisor = 4;
-  double quociente = dividendo / divisor;
-  int resto = dividendo % divisor;
-  bool exata = resto == 0;
-  print('Quocinete:$quociente, exata: $exata, Resto : $resto \n');
+ 
 }

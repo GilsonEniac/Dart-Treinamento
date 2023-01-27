@@ -9,18 +9,10 @@ void main() {
 
   int idade = 19;
 
-  print((idade < 14)
-      ? 'Criança'
-      : (idade < 18)
-          ? 'Adolescente'
-          : 'Adulto ');
+  print((idade < 14)? 'Criança': (idade < 18) ? 'Adolescente' : 'Adulto ');
 
   int nota = 80;
-  String resultado = ((nota < 40)
-      ? 'Reprovado'
-      : (nota < 70)
-          ? 'Recuperação'
-          : 'Aprovado');
+  String resultado = ((nota < 40)? 'Reprovado': (nota < 70) ? 'Recuperação': 'Aprovado');
 
   print(resultado);
 

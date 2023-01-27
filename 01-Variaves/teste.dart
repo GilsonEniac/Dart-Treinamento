@@ -1,11 +1,5 @@
 main() {
-  
-int idade = 21;
+var nome = 'gilson moura gomes';
 
-print((idade < 14) ? 'Criança' : (idade <18) ? 'Adolescente':(idade <20) ?'Adulto' :'velho');
-
-
-
-
-
+  print(nome.lastIndexOf('gomes'));
 }
