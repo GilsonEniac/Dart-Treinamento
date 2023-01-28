@@ -1,4 +1,6 @@
 main() {
+  
+
   ///maneira de crias MAPS
   ///
   var ListaMap = {'Gilson': 'Comentario Gilson', 'Cassia': 'Comentario Cassia', 'Bella': 'Comentario Bella'};
@@ -18,8 +20,8 @@ main() {
   listaTotal['Joao'] = 'ddddd';
   listaTotal['Maria'] = 'ljsckss';
 
-var listaChave = ['Gilson', 'Cassia', 'Laura', 'Duda', 'Belle', 'Theo'];
- var listaValor = ['Coment Gilson', 'Coment Cassia', 'Coment Laura', 'Coment Duda', 'Comente Belle', 'Coment Theo'];
+  var listaChave = ['Gilson', 'Cassia', 'Laura', 'Duda', 'Belle', 'Theo'];
+  var listaValor = ['Coment Gilson', 'Coment Cassia', 'Coment Laura', 'Coment Duda', 'Comente Belle', 'Coment Theo'];
 
   print(listaTotal.length);
   int total = listaValor.length - 1;
@@ -29,11 +31,11 @@ var listaChave = ['Gilson', 'Cassia', 'Laura', 'Duda', 'Belle', 'Theo'];
     total--;
   }
 
+  listaTotal.forEach((key, value) {
+    print('teste $key');
+  });
 
-listaTotal.forEach((key, value) {print('teste $key');});
-
-for(var item in listaTotal.entries){
-print('Chave:${item.key } Valor:${item.value}');
-}
-
+  for (var item in listaTotal.entries) {
+    print('Chave:${item.key} Valor:${item.value}');
+  }
 }
