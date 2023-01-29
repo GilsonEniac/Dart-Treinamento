@@ -25,14 +25,20 @@ main() {
 
   Conta conta = new Conta();
 
-  conta.nome = 'Gilson';
+  conta.nome;
   conta.numeroConta;
   conta.saldo;
   print('Nome:${conta.nome} Conta nº:${conta.numeroConta} Saldo: ${conta.consultaSaldo()}');
   print('');
   conta.depositar(200);
-  
+
   print('');
   conta.depositar2(100);
-  
+  print('');
+  conta.sacar(150);
+  print('');
+  conta.depositar3(120);
+  print(conta.consultaSaldo());
+  print('');
+  conta.sacar(270);
 }

@@ -8,7 +8,7 @@ class Conta {
 //metodo para chamar o saldo;
   double consultaSaldo() => this.saldo;
 
-  void depositar(double valorDeposito) => print('Saldo:${this.saldo += valorDeposito} Deposito: ${valorDeposito}');
+  void depositar(double valorDeposito) => print('Deposito: ${valorDeposito} Saldo:${this.saldo += valorDeposito}');
   //ou
   // void depositar(double valorDeposito){
   //print('Saldo: valorDeposito  Deposito: $this.saldo')
@@ -16,6 +16,13 @@ class Conta {
 
   void depositar2(double valordeposito) {
     this.saldo += valordeposito;
-    print('Saldo:${consultaSaldo()} Deposito: ${valordeposito}');
+    print('Deposito: ${valordeposito} Saldo:${consultaSaldo()} ');
   }
+
+  double? depositar3(double valorDeposito) {
+     return this.saldo += valorDeposito;
+    
+  }
+
+  void sacar(double valorSaque) => (valorSaque > this.saldo)?print('valor acima do saldo'):print('Saque:${this.saldo -= valorSaque} Saldo: ${consultaSaldo()} ');
 }
