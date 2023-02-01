@@ -17,5 +17,5 @@ void exibirDados1(String nome, [int? peso, double? altura]) {
 }
 
 main() {
-  exibirDados1('Gilson',90,1.68);
+  exibirDados1('Gilson',90);
 }

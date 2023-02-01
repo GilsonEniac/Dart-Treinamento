@@ -2,14 +2,14 @@ class Usuario {
   String? user, senha, nome, cargo;
   int? idade;
 
-  Usuario(this.user, this.senha, {this.nome, String? cargo}) {
+  Usuario(this.user, this.senha, {this.nome, String? cargo,this.idade}) {
     this.nome = (nome == null) ? 'Sem Nome' : nome;
     this.cargo = (cargo == null) ? 'Usuario' : cargo;
 
     print('Construtor resumido com Parametros nomeados ${this.toString()}');
   }
 
-  Usuario.admin(this.user, this.senha, {this.nome}) {
+  Usuario.admin(this.user, this.senha, {this.nome,this.idade}) {
     this.nome = (nome == null) ? 'Sem Nome' : nome;
     this.cargo = 'Administrador';
   }
