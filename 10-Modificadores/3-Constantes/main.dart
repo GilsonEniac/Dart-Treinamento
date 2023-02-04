@@ -1,6 +1,20 @@
 import 'Brasil.dart';
 
 main() {
+  //CONST
+  //Inicializada em tempo de compilação, deve ser declarada com valor constante.
+
+  //Ao nivel de Classes deve ser Staticas para ficar disponivel na Classe.
+
+  //Em Coleções CONST todo conteudo deve ser constante
+
+  //OBJETO IMUTAVEL
+  //O Contrutor deve ser CONST
+  //As variaveis devem ser FINAL ou STATIC CONST
+
+
+
+  
   const pi = 3.14;
   double raio = 2;
   var resultado = pi * (raio * raio);

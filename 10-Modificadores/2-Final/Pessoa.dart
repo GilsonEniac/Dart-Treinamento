@@ -1,6 +1,6 @@
 class Pessoa {
-  late String nome;
-  late final dynamic familiares;
+  String nome;
+  final dynamic familiares;
 
   Pessoa(this.nome, this.familiares);
 }
