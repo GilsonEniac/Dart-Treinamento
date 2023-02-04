@@ -1,4 +1,5 @@
 class Pessoa {
+
   String nome;
   final dynamic familiares;
 

@@ -5,7 +5,9 @@ main() {
 
   //Em coleções FINAL nem todos conteudo seerá FINAL.
 
+  const teste = 555;
 
+  print(teste);
 
   var pessoa = new Pessoa('Gilson', ['Cassia', 'Mae']);
   pessoa.nome = 'Gilson Moura';

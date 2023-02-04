@@ -1,7 +1,7 @@
 //objeto imutavel
 
 class Brasil {
-  static double teste = 0;
+  static const  double teste=666;
   final double latitude;
   final double longitude;
   static const estados = ['SP', 'RJ', 'MG', '...'];

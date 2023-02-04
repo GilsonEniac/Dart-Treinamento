@@ -12,9 +12,6 @@ main() {
   //O Contrutor deve ser CONST
   //As variaveis devem ser FINAL ou STATIC CONST
 
-
-
-  
   const pi = 3.14;
   double raio = 2;
   var resultado = pi * (raio * raio);
@@ -49,4 +46,5 @@ main() {
 
   print('Estados: ${Brasil.estados}');
 
+  print(Brasil.teste);
 }
