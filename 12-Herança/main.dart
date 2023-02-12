@@ -1,5 +1,5 @@
 import '3-Cao.dart';
-import '2-Mamiferos.dart';
+
 
 /*    
 Regras:
