@@ -1,5 +1,5 @@
 class Venda {
   String produto;
-  num preco;
+  double  preco;
   Venda(this.produto, double this.preco);
 }
