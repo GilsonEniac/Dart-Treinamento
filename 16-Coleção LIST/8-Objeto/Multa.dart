@@ -1,5 +1,5 @@
 class Multa {
-  String descricao, tipo;
-  int pontos;
-  Multa(this.descricao,this.tipo,this.pontos);
+  String? descricao, tipo;
+  int pontos =0;
+  Multa(this.descricao,this.tipo, int this.pontos);
 }

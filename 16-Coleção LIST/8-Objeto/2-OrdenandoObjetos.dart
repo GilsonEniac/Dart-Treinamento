@@ -1,5 +1,5 @@
-import 'Venda.dart';
-import 'Vendedor.dart';
+import '2-Venda.dart';
+import '2-Vendedor.dart';
 
 main() {
   List<Vendedor> vendedores = [];
