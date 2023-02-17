@@ -1,9 +1,7 @@
-
-import 'dart:collection';
 main() {
 //Com objetos
 
-  List<Map<String, Object?>> escola = [
+  List<Map<String?, dynamic>> escola = [
     {
       'nome': 'Turma T1',
       'alunos': [
@@ -19,30 +17,26 @@ main() {
       ]
     }
   ];
-var alunoEscola = escola.map((e) => e['alunos']);
-  //print(alunoEscola);
-
+  var alunoEscola = escola.map((e) => e['alunos']);
+  print(alunoEscola);
+  print('');
 //Transformando para uma unica lista de alunos
-//List<dynamic> alunosEscola2 = escola.map((e) => e['alunos']).expand((element) => element);
-
+  print(alunoEscola);
 //mapear as notas dos alunos
 
 //var alunosEscola3 = escola.map((e) => e['alunos']).expand((element) => element).map((e) => e['nota'].tolist());
-  //print(alunoEscola3);
+//print(alunosEscola3);
 
   //Lsta com todos alunos da escola
-  //var alunoEscola = escola.map((e) => e['alunos']).expand((element) => element).map((e) => e['nota'].toList());
-  //print(alunoEscola);
+ // var alunoEscola5 = escola.map((e) => e['alunos']).expand((element) => element).map((e) => e['nota'].toList());
+ // print(alunoEscola5);
 
 //ordenar pela nota dos alunos
 
 //var alunosEscola5;
-//alunosEscola5.sort((a,b)=> a['nota'].compareTo(b['nota']));
-
+//var alunosEscola.sort((a,b)=> a['nota'].compareTo(b['nota']));
 
 //double mediaNotas = alunoEscola.map((e) => e['nota'].reduce(p,c)=> p+c) / alunoEscola.length;
 
-
-
-var alunoEscola.foreach((e)=>print($e['nome'] $e['nota']));
+//var alunoEscola.foreach((e)=>print($e['nome'] $e['nota']));
 }

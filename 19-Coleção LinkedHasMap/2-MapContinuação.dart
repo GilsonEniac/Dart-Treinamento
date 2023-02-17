@@ -10,11 +10,13 @@ main() {
 
   porcentagem(desc) => (valor) => desc * valor['preço'];
 
+  // ignore: unused_local_variable
   final moeda = (e) => 'R\$ ${e.toString().replaceFirst('.', ',')}';
   final moeda2 = (e) => 'R\$ ${e.toDouble().toStringAsFixed(2).replaceFirst('.', ',')}';
 
   var precos1 = carrinho.map(porcentagem(.9)).map(moeda2).toList();
   print(precos1);
+  // ignore: unused_local_variable
   var precos2 = carrinho.map((e) => e['preço'] * .9).map(moeda2).toList();
 
   //ou

@@ -24,6 +24,7 @@ main() {
   print('\n $listaDinamica');
 
   print(listaDinamica = [0, ...inteiros, 15]);
+  // ignore: unnecessary_type_check
   print(listaDinamica = [...[], ...inteiros, if (doubles is List<double>) ...doubles]);
   print(listaDinamica=[...[],for(var num in numeros)num]);
 }

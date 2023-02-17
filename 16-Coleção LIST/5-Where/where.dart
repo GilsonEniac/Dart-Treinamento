@@ -6,6 +6,7 @@ Filtra os elementos da coleção criando uma nova coleção do mesmo tamanho ou 
 
 main() {
   List<int> idades = [36, 12, 18, 31, 17, 23];
+  // ignore: unnecessary_type_check
   print(idades.where((element) => element is int)); //retorno em itereble
   print('');
   print(idades.whereType<int>());

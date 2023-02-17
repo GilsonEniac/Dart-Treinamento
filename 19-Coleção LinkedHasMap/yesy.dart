@@ -1,7 +1,7 @@
 main() {
 //Com objetos
 
-  List<Map<String, Object?>> escola = [
+  List<Map<String, Object>> escola = [
     {
       'nome': 'Turma T1',
       'alunos': [
@@ -17,7 +17,12 @@ main() {
       ]
     }
   ];
+  //lista notas
+//List< dynamic> alunosEscola = escola.map((e) => e['alunos']).expand((e) => e).map((e) => e  ['nota']).toList();
 
-  var listaAluno =
-  
+//  List<dynamic> alunosEscola = escola.map((e) => e['alunos']).toList();
+  //print(alunosEscola);
+
+  //alunosEscola.sort((b, a) => a['nota'].compareTo(b['nota']));
+  //print(alunosEscola);
 }
