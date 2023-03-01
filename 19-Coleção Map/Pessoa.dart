@@ -6,7 +6,7 @@ class Pessoa {
 
   factory Pessoa(String nome, {int? idade, double? peso}) {
     if (_pessoas.containsKey(nome))  
-    return _pessoas[nome];
+    /*return*/ _pessoas[nome];
 
     final novaPessoa = Pessoa._construtorPrivado(nome,  idade, peso);
     _pessoas[nome] = novaPessoa;

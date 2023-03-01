@@ -8,9 +8,9 @@ void main(List<String> args) {
   Pessoa('Theo');
 
   Pessoa.mostrarPessoas();
-//  p1.peso = 70;
+ p1.peso = 70;
 //  Pessoa.mostrarDetalhes('Fernando');
-//  p2.peso = 61.1;
+  p2.peso = 61.1;
 //  Pessoa.alterarDetalhes('Theo', idade: 1, peso: 7);
 //  Pessoa.mostrarPessoas();
 }
