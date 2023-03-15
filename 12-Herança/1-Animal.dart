@@ -1,6 +1,6 @@
 class Animal {
- String? idade;
-  bool? docil;
+ String idade;
+  bool docil;
 
   Animal(this.idade, {this.docil});
 

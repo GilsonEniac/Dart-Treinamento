@@ -32,7 +32,7 @@ import 'dart:async';
 
 main() {
   //conceito
-  var lista = List<dynamic>;
+  var lista = List<dynamic>();
 
   //1 passo controlador
   var controlador = StreamController<dynamic>();

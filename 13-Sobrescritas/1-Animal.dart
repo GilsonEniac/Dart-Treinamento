@@ -1,12 +1,12 @@
 abstract class Animal {
-  String? idade;
+  String idade;
   bool docil;
-  late bool coluna;
+  bool coluna;
 
-  Animal.vertebrados(String? this.idade, {required this.docil}) {
+  Animal.vertebrados(String this.idade, {this.docil}) {
     this.coluna = true;
   }
-  Animal.invertebrados(String? this.idade, {required this.docil}) {
+  Animal.invertebrados(String this.idade, {this.docil}) {
     this.coluna = false;
   }
 

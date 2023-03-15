@@ -7,7 +7,7 @@ main() {
   print(nomesMap);
   nomesMap.forEach((key, value) => print('${key} : ${value}'));
 
-  Map<String?, dynamic> frutas = Map();
+  Map<String, dynamic> frutas = Map();
   frutas['Banana'] = 'Amarela';
   frutas['Banana'] = 'Verde'; //mesma chave atualiza o valor
   frutas['Goiaba'] = 'Amarela';

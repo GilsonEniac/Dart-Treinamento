@@ -19,7 +19,13 @@ String jsonData = '''{
   "nome":"Fernando",
   "idade":36,
   "email": "fm@gmail"
-}''';
+},
+{
+  "nome":"Fernando",
+  "idade":36,
+  "email": "fm@gmail"
+}
+''';
 main() {
 //DECODE
 

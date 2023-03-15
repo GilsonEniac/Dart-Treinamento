@@ -4,7 +4,7 @@
 ///     Utilizados quando vc tem  muitos paramentros para passar e não tem que lemabar da ordem
 ///
 
-void exibirDados2(String nome, {int? peso = 78, double? altura}) {
+void exibirDados2(String nome, {int peso = 78, double altura}) {
   print('Nome: $nome, Altura: ${altura ?? 'Não Informado'} Peso: $peso');
 }
 

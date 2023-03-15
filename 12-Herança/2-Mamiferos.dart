@@ -1,9 +1,9 @@
 import '1-Animal.dart';
 
 class Mamiferos extends Animal {
-  String? sexo;
+  String sexo;
 
-  Mamiferos(this.sexo, String? idade, bool docil) : super(idade,docil:docil);
+  Mamiferos(this.sexo, String idade, bool docil) : super(idade,docil:docil);
  
 
   void alimientar() {

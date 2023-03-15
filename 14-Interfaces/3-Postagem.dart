@@ -1,6 +1,6 @@
 //interface concreta
 class Postagem {
-  String? postagem;
+  String postagem;
 
   void escreverPostagem() {
     print('');

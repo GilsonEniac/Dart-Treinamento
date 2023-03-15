@@ -1,7 +1,7 @@
 class Usuario2 {
   bool alteracao = false;
-  late String nome;
-  late String _senha;
+   String nome;
+   String _senha;
 
   Usuario2(this.nome, String senha) {
     this._senha = senha;

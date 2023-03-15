@@ -1,7 +1,7 @@
 main() {
 //Com objetos
 
-  List<Map<String?, dynamic>> escola = [
+  List<Map<String, dynamic>> escola = [
     {
       'nome': 'Turma T1',
       'alunos': [

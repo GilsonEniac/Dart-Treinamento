@@ -11,7 +11,7 @@
 main(){
 //Quando voce desconhece a exceção , use a clausula Try Catch
 try{
-int? resultado = (1 / 0)as int; 
+int resultado = (1 / 0)as int; 
 print(resultado);
 
 }catch (e){

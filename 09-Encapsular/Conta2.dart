@@ -2,10 +2,10 @@ import 'dart:math';
 
 class Conta2 {
   bool alteracao = false;
-  late String _nome;
-  late double _saldo = 0;
-  late double _limite = 500;
-  late String _numeroConta;
+   String _nome;
+   double _saldo = 0;
+   double _limite = 500;
+   String _numeroConta;
 
   Conta2(String nome) {
     this._nome = nome;

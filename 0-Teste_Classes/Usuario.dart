@@ -1,6 +1,6 @@
 class Usuario {
-  late String user;
-  late String senha;
+  String user;
+  String senha;
 
   void autenticar() {
     var user = 'gmg@gmail.com';

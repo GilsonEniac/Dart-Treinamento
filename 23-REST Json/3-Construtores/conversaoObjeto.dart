@@ -30,15 +30,15 @@ main() {
   ListaUsuarios listaUsuarios = ListaUsuarios.fron1Json(parseJson);
   print(parseJson);
 
-  Usuario usuario = listaUsuarios.usuarios!.singleWhere((e) => e.nome == 'Fernando');
+  Usuario usuario = listaUsuarios.usuarios.singleWhere((e) => e.nome == 'Fernando');
 
-  print('USO OBJETO: Nome: ${usuario.nome}, Idade:${usuario.idade}, Email: ${listaUsuarios.usuarios![0].email}\n ');
+  print('USO OBJETO: Nome: ${usuario.nome}, Idade:${usuario.idade}, Email: ${listaUsuarios.usuarios[0].email}\n ');
 
   var novoUsuario = Usuario.fromJson({'nome': 'Chloe', 'idade': 1, 'email': 'cm@gmail'});
-  listaUsuarios.usuarios!.add(novoUsuario);
+  listaUsuarios.usuarios.add(novoUsuario);
 
 //ENCODE
-  List<dynamic>? lista = listaUsuarios.to2Json();
+  List<dynamic> lista = listaUsuarios.to2Json();
 
   String toJson = jsonEncode(lista);
 

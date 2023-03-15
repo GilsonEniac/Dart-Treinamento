@@ -1,6 +1,6 @@
 class Usuario {
-  String? usuario;
-  String? senha;
+  String usuario;
+  String senha;
 
   void autenticar() {
     var usuario = 'gg@gmail.com'; // informação vinda de um banco de dados como exemplo

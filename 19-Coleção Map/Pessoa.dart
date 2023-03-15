@@ -1,10 +1,10 @@
 class Pessoa {
   static final Map<String, Pessoa> _pessoas = Map();
   final String nome;
-  int? idade;
-  double? peso;
+  int idade;
+  double peso;
 
-  factory Pessoa(String nome, {int? idade, double? peso}) {
+  factory Pessoa(String nome, {int idade, double peso}) {
     if (_pessoas.containsKey(nome))  
     /*return*/ _pessoas[nome];
 
@@ -22,7 +22,7 @@ class Pessoa {
     }
   }
 
-  static void alterarDetalhes(String nome, {int? idade, double? peso}) {
+  static void alterarDetalhes(String nome, {int idade, double peso}) {
     if (_pessoas.containsKey(nome)) {
       _pessoas[nome]?.idade = idade;
       _pessoas[nome]?.peso = peso;

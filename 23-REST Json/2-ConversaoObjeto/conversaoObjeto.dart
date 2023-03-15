@@ -23,24 +23,25 @@ String jsonData = '''[{
   }]''';
 
 main() {
-  //DECODE
+  //DECODE converter um arquivo json em uma Lista
   List<dynamic> parseJson = jsonDecode(jsonData);
-  print('${parseJson}\n');
+  print('ParseJson :${parseJson}\n');
 
-  ListaUsuarios listaUsuarios = ListaUsuarios.fron1Json(parseJson);
-  print(parseJson);
+  ListaUsuarios listaUsuarios = ListaUsuarios.from1Json(parseJson);
 
-  Usuario usuario = listaUsuarios.usuarios!.singleWhere((e) => e.nome == 'Fernando');
+  print('listaUsuarios :${listaUsuarios}');
 
-  print('USO OBJETO: Nome: ${usuario.nome}, Idade:${usuario.idade}, Email: ${listaUsuarios.usuarios![0].email}\n ');
+  Usuario usuario = listaUsuarios.usuarios.singleWhere((e) => e.nome == 'Fernando');
 
-  var novoUsuario = Usuario.fromJson({'nome': 'Chloe', 'idade': 1, 'email': 'cm@gmail'});
-  listaUsuarios.usuarios!.add(novoUsuario);
+  print('USO OBJETO: Nome: ${usuario.nome}, Idade:${usuario.idade}, Email: ${listaUsuarios.usuarios[0].email}\n ');
 
-//ENCODE
-  List<dynamic>? lista = listaUsuarios.to2Json();
+  var novoUsuario = Usuario.fromJsonU({'nome': 'Chloe', 'idade': 1, 'email': 'cm@gmail'});
+  listaUsuarios.usuarios.add(novoUsuario);
 
-  String toJson = jsonEncode(lista);
+//ENCODE converter uma lista para um arquivo Json
+  List<dynamic> lista = listaUsuarios.to2Json();
 
-  print(toJson);
+  String toJson44 = jsonEncode(lista);
+
+  print('\n ENCODE: ${toJson44}');
 }

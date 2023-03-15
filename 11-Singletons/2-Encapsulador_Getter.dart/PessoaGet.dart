@@ -1,6 +1,6 @@
 class PessoaGet {
   static final PessoaGet _instancia = PessoaGet._construtorNomeado();
-  String? nome;
+  String nome;
 
   PessoaGet._construtorNomeado();
 
