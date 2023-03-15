@@ -10,7 +10,7 @@ main() {
 }
 
 class ListaPessoa {
-  List<Pessoa>? pessoa;
+  List<Pessoa> pessoa;
 
   ListaPessoa({this.pessoa});
 
@@ -26,9 +26,9 @@ class ListaPessoa {
 }
 
 class Pessoa {
-  String? nome;
-  String? idade;
-  String? email;
+  String nome;
+  String idade;
+  String email;
 
   Pessoa({this.nome, this.idade, this.email});
 

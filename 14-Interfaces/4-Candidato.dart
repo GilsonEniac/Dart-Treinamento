@@ -3,9 +3,9 @@ import '3-Postagem.dart';
 import '2-Presidenciavel.dart';
 
 class Candidato extends Cidadao implements Postagem, Presidenciavel {
-  String? objetivo;
+  String objetivo;
 
-  Candidato(String nome, {required this.ideologia, required this.partido}) : super(nome) {
+  Candidato(String nome, {this.ideologia, this.partido}) : super(nome) {
     direitosDeveres();
   }
 
@@ -16,7 +16,7 @@ class Candidato extends Cidadao implements Postagem, Presidenciavel {
 
 //interfaces
   @override
-  String? postagem;
+  String postagem;
 
   @override
   void escreverPostagem() {
@@ -24,8 +24,8 @@ class Candidato extends Cidadao implements Postagem, Presidenciavel {
   }
 
   @override
-  String? ideologia;
-  String? partido;
+  String ideologia;
+  String partido;
 
   @override
   void ideologiaPolitica() {

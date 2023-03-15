@@ -1,6 +1,6 @@
 class Usuario {
-  String? nome, email;
-  int? idade;
+  String nome, email;
+  int idade;
 
   Usuario({this.nome, this.idade, this.email});
 

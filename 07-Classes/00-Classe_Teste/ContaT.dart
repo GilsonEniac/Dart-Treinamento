@@ -1,8 +1,8 @@
 import 'dart:math';
 
 class Conta {
-  late String nome;
-  late int contaCorrente = Random().nextInt(100);
+  String nome;
+  int contaCorrente = Random().nextInt(100);
   double saldo = 0;
 
   saldoConta() => this.saldo;

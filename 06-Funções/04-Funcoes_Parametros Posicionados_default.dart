@@ -9,7 +9,7 @@
 /// Default => Quando voce definie um valor para variavel , exemplo -> int peso =79
 ///
 
-void exibirDados1(String nome, [int? peso, double? altura]) {
+void exibirDados1(String nome, [int peso, double altura]) {
   if ((peso == null) && (altura ==null))
     print('Nome: $nome');
   else

@@ -1,7 +1,7 @@
 import 'Usuario.dart';
 
 class ListaUsuarios {
-  List<Usuario>? usuarios;
+  List<Usuario> usuarios;
 
   ListaUsuarios({this.usuarios});
 
@@ -9,7 +9,7 @@ class ListaUsuarios {
     return ListaUsuarios(usuarios: json.map((e) => Usuario.fromJsonU(e)).toList());
   }
 
-  List<dynamic>? to2Json() {
+  List<dynamic> to2Json() {
     return usuarios;
   }
 }

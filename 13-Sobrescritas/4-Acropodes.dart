@@ -2,7 +2,7 @@ import '1-Animal.dart';
 class Acropodes extends Animal{
  
   
-  String? caracteristicas;
+  String caracteristicas;
   
   
   Acropodes.insetos(String idade, bool docil) :super.invertebrados(idade, docil: docil){

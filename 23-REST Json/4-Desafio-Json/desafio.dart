@@ -13,21 +13,21 @@ main() {
 //ENCODE
   Map<String, dynamic> map = pessoa.toJson();
 
-  String ArqJson = jsonEncode(map);
+  //String ArqJson = jsonEncode(map);
 
-  print(ArqJson);
+  //print(ArqJson);
 } //fim main
 
 class Pessoa {
-  String? nome;
-  int? idade;
-  Parente? parentes;
-  List<String>? tarefas;
-  Conjuge? conjuge;
+  String nome;
+  int idade;
+  Parente parentes;
+  List<String> tarefas;
+  Conjuge conjuge;
   List<Filho> filhos;
-  Bens? bens;
+  Bens bens;
 
-  Pessoa({this.nome, this.idade, this.parentes, this.tarefas, this.conjuge, required this.filhos, this.bens});
+  Pessoa({this.nome, this.idade, this.parentes, this.tarefas, this.conjuge, this.filhos, this.bens});
 
   Pessoa.fromJson(Map<String, dynamic> json)
       : this(
@@ -54,8 +54,8 @@ class Pessoa {
 } //fim da classe Pessoa
 
 class Parente {
-  String? mae;
-  String? pai;
+  String mae;
+  String pai;
 
   Parente({this.mae, this.pai});
   Parente.fromJson(Map<String, dynamic> json)
@@ -73,9 +73,9 @@ class Parente {
 }
 
 class Conjuge {
-  String? nome;
-  int? idade;
-  Parente? parentes;
+  String nome;
+  int idade;
+  Parente parentes;
 
   Conjuge({this.nome, this.idade, this.parentes});
 
@@ -96,9 +96,9 @@ class Conjuge {
 } //fima classe Conjuge
 
 class Filho {
-  String? nome;
-  int? idade;
-  List<String>? vacinas;
+  String nome;
+  int idade;
+  List<String> vacinas;
 
   Filho({this.nome, this.idade, this.vacinas});
 
@@ -119,8 +119,8 @@ class Filho {
 } //fim claasse filho
 
 class Bens {
-  late List<Veiculo>? veiculos;
-  late List<Imovel>? imoveis;
+  List<Veiculo> veiculos;
+  List<Imovel> imoveis;
 
   Bens({this.veiculos, this.imoveis});
 
@@ -139,10 +139,10 @@ class Bens {
 } //fim classe Bens
 
 class Veiculo {
-  String? marca;
-  String? modelo;
-  Caracteristica? caracteristicas;
-  List<Multa>? multas;
+  String marca;
+  String modelo;
+  Caracteristica caracteristicas;
+  List<Multa> multas;
 
   Veiculo({this.marca, this.modelo, this.caracteristicas, this.multas});
 
@@ -165,8 +165,8 @@ class Veiculo {
 } //fim classe Veiculo
 
 class Caracteristica {
-  String? tipo;
-  String? passageiro;
+  String tipo;
+  String passageiro;
 
   Caracteristica({this.tipo, this.passageiro});
 
@@ -182,9 +182,9 @@ class Caracteristica {
 } //fim classe Caracteristicas
 
 class Multa {
-  String? descrisao;
-  String? tipo;
-  int? pontos;
+  String descrisao;
+  String tipo;
+  int pontos;
 
   Multa({this.descrisao, this.tipo, this.pontos});
 
@@ -205,9 +205,9 @@ class Multa {
 } //fim classe multa
 
 class Imovel {
-  String? tipo;
-  String? endereco;
-  List<Conta>? contas;
+  String tipo;
+  String endereco;
+  List<Conta> contas;
 
   Imovel({this.tipo, this.endereco, this.contas});
 
@@ -228,8 +228,8 @@ class Imovel {
 } //fim classe imovel
 
 class Conta {
-  String? tipo;
-  int? valor;
+  String tipo;
+  int valor;
 
   Conta({this.tipo, this.valor});
 
@@ -247,7 +247,7 @@ class Conta {
   }
 } //fim classe Conta
 
-late String arquivoJson = '''{
+String arquivoJson = '''{
     "nome" : "Fernando", 
     "idade": 36, 
     "parentes": {

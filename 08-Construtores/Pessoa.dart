@@ -1,10 +1,10 @@
 class Pessoa {
-  late String nome;
-  late int idade;
-  late String cor;
-  late double altura;
+String nome;
+ int idade;
+ String cor;
+ double altura;
 
-  Pessoa(this.nome, this.idade, {String? cor, this.altura = 0}) {
+  Pessoa(this.nome, this.idade, {String cor, this.altura = 0}) {
     this.cor = (cor == null) ? 'Indefinida' : cor;
     
 

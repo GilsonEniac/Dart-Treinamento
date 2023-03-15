@@ -20,7 +20,7 @@ Future<String> tarefa({int tempo = 1}) async {
   return 'STATUS: $msg';
 }
 
-Future<String>?status([int tempo = 0])  {
+Future<String>status([int tempo = 0])  {
   try {
     if (tempo < 4) throw Exception('Tempo insuficiente para o load programado');
     return Future.delayed(Duration(seconds: tempo), () => 'Primeira tarefa finalizada');

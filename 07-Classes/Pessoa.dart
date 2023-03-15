@@ -1,6 +1,6 @@
 class Pessoa {
-  String? nome;
-  int? idade;
+  String nome;
+  int idade;
 
   void info() {
     print('Nome: $nome Idade: $idade');

@@ -1,9 +1,9 @@
 //MIXIN
 
 abstract class Conta {
-  late double _saldo;
+  double _saldo;
   double salario = 33000;
-  String? teste;
+  String teste;
 
   get saldo => this._saldo;
 

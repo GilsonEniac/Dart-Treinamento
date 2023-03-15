@@ -13,11 +13,11 @@ class PessoaFactory {
 }
 
 class PessoaInstancia {
-  static PessoaInstancia? _instancia;
+  static PessoaInstancia _instancia;
   String nome;
   final int _identidade;
 
-  factory PessoaInstancia({String nome = 'indefinido', int? identidade}) {
+  factory PessoaInstancia({String nome = 'indefinido', int identidade}) {
     //identidade = (identidade == null) ? Random().nextInt(99999999 + 9) : identidade;
     identidade ??= Random().nextInt(99999999 + 9);
     

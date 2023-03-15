@@ -1,7 +1,7 @@
 import 'Usuario.dart';
 
 class ListaUsuarios {
-  List<Usuario>? usuarios;
+  List<Usuario> usuarios;
 //Construtor default da classe
   ListaUsuarios({this.usuarios});
 
@@ -13,7 +13,7 @@ class ListaUsuarios {
 //Construtor com lista de inicialização, us this para passar os parametros para o Construtor Default
   ListaUsuarios.fron1Json(List<dynamic> json) : this(usuarios: json.map((e) => Usuario.fromJson(e)).toList());
 
-  List<dynamic>? to2Json() {
+  List<dynamic> to2Json() {
     return usuarios;
   }
 }

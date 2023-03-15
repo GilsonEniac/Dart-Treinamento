@@ -1,5 +1,5 @@
 class Objeto {
-  late String none;
+  String none;
 
   Objeto() {
     print('Construtor sem Parametros ! ${this.toString()}');
